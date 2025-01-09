@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "RedML"  # Replace with your package name
+version = "1.0.0"
+description = "The ultimate Python machine learning package (under development)"
+authors = [
+    { name = "Arnav Bajaj", email = "arnavbajaj9@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+keywords = ["machine learning", "regression", "KNN", "linear regression"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "numpy",
+    "matplotlib"
+]
+python = ">=3.6"
+
+[project.urls]
+Homepage = "https://github.com/Jackhammer9/RedML"

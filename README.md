@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/logo.png" alt="RedML Logo" width="200">
+  <img src= "https://raw.githubusercontent.com/Jackhammer9/RedML/main/images/logo.png" height=250px width=250px>
 </p>
 
 <h1 align="center">RedML</h1>

@@ -4,7 +4,7 @@ version = "1.0.0"
 authors = [
   { name="Arnav Bajaj", email="arnavbajaj9@gmail.com" },
 ]
-description = "A small example package"
+description = "The ultimate python machine learning package"
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [

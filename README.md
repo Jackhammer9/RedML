@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/logo.png" alt="RedML Logo" width="200">
+  <img src="logo.png" alt="RedML Logo" width="200">
 </p>
 
 <h1 align="center">RedML</h1>

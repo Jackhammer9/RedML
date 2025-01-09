@@ -57,7 +57,7 @@ pip install .
 
 #### **Example Usage**
 ```python
-from RedML.models.regression.LinearRegression import LinearRegressionClassifier
+from RedML import LinearRegressionClassifier
 
 # Training data
 X = [[1], [2], [3], [4], [5]]  # Single feature dataset
@@ -88,7 +88,7 @@ print("R² Score:", r2_score)
 
 #### **Example Usage**
 ```python
-from RedML.models.regression.KNNRegression import KNNRegressionClassifier
+from RedML import KNNRegressionClassifier
 
 # Training data
 X = [[1], [2], [3], [4], [5]]  # Single feature dataset
@@ -112,32 +112,6 @@ knn.visualize()
 r2_score = knn.score(X, y)
 print("R² Score:", r2_score)
 ```
-
----
-
-## **Project Structure**
-
-```
-RedML/
-├── models/
-│   ├── regression/
-│   │   ├── __init__.py
-│   │   ├── KNNRegression.py
-│   │   ├── LinearRegression.py
-│   ├── __init__.py
-├── tests/
-│   ├── __init__.py
-│   ├── test_KNNRegression.py
-│   ├── test_LinearRegression.py
-├── examples/
-│   ├── knn_example.py
-│   ├── linear_example.py
-├── LICENSE
-├── pyproject.toml
-├── requirements.txt
-├── setup.py
-```
-
 ---
 
 ## **Contributing**

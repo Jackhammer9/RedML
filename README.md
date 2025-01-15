@@ -24,12 +24,30 @@ A Python package for machine learning models built from scratch, including **Lin
   - Supports single and multi-feature datasets.
   - Visualize the regression line for single-feature datasets.
   - Evaluate using the R² score.
+  - Includes feature scaling for better convergence.
 
 - **K-Nearest Neighbors Regression**:
   - Predict continuous target values using \( k \)-nearest neighbors.
   - Supports single and multi-feature datasets.
   - Visualize regression curves for single-feature datasets.
   - Evaluate using the R² score.
+  - Configurable distance metrics (e.g., Euclidean, Manhattan).
+
+- **Support Vector Regression (SVR)**:
+  - Train using the epsilon-insensitive loss function.
+  - Supports linear, polynomial, and RBF kernels.
+  - Handles single and multi-feature datasets.
+  - Visualize the regression fit for single-feature datasets.
+  - Evaluate using the R² score.
+  - Configurable regularization parameter (C) and kernel-specific parameters (e.g., gamma for RBF).
+
+- **Polynomial Regression**:
+  - Train and predict using gradient descent optimization.
+  - Supports single-feature datasets.
+  - Visualize the polynomial regression fit for single-feature datasets.
+  - Configurable polynomial degree.
+  - Evaluate using the R² score.
+  - Automatically generates polynomial features for input data.
 
 ---
 

@@ -112,6 +112,37 @@ knn.visualize()
 r2_score = knn.score(X, y)
 print("R² Score:", r2_score)
 ```
+
+---
+
+### **3. Polynomial Regression**
+
+#### **Example Usage**
+```python
+from RedML import PolynomialRegressionClassifier
+
+# Training data
+X = [[1], [2], [3], [4], [5]]  # Single feature dataset
+y = [2.3, 3.1, 4.8, 8.5, 10.1]
+
+# Initialize the model
+model = PolynomialRegressionClassifier(X, y, degree=3, learningRate=0.0001, maxIter=3000)
+
+# Train the model
+model.fit()
+
+# Predict target values
+X_test = [[6]]
+predictions = model.predict(X_test)
+print("Predictions:", predictions)
+
+# Visualize the polynomial regression curve
+model.visualize()
+
+# Evaluate the model using R² score
+r2_score = model.score(X, y)
+print("R² Score:", r2_score)
+```
 ---
 
 ## **Contributing**

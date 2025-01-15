@@ -15,7 +15,6 @@ class KNNRegressionClassifier:
         k (int): Number of neighbors to consider for prediction.
 
     Methods:
-        fit(): Stores the training data.
         predict(X): Predicts target values for input data.
         score(X, y): Calculates the R² score of the model.
         visualize(resolution): Visualizes the regression curve for single-feature datasets.
@@ -33,14 +32,6 @@ class KNNRegressionClassifier:
         self.X = np.array(X)
         self.y = np.array(y)
         self.k = k
-
-    def fit(self) -> None:
-        """
-        Stores the training data. In KNN, this is essentially a no-op,
-        as the model doesn't require explicit training.
-        """
-        self.X = np.array(self.X)
-        self.y = np.array(self.y)
 
     def predict(self, X: np.ndarray) -> np.ndarray:
         """
@@ -73,8 +64,8 @@ class KNNRegressionClassifier:
         Evaluates the model's performance using the R² score.
 
         Args:
-            X (np.ndarray): Test feature matrix of shape (n_samples, n_features).
-            y (np.ndarray): True target values of shape (n_samples,).
+            X: Test feature matrix.
+            y: True target values.
 
         Returns:
             float: R² score.

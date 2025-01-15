@@ -1,3 +1,4 @@
-from .regression import KNNRegressionClassifier, LinearRegressionClassifier
+from .regression import KNNRegressionClassifier, LinearRegressionClassifier, PolynomialRegressionClassifier
 
-__all__ = ["KNNRegressionClassifier", "LinearRegressionClassifier"]
+__all__ = ["KNNRegressionClassifier", "LinearRegressionClassifier"
+           ,"PolynomialRegressionClassifier"]

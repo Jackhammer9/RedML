@@ -10,8 +10,8 @@ class KNNRegressionClassifier:
     k-nearest neighbors in the feature space.
 
     Attributes:
-        X (np.ndarray): Training feature matrix.
-        y (np.ndarray): Training target vector.
+        X: Training feature matrix.
+        y: Training target vector.
         k (int): Number of neighbors to consider for prediction.
 
     Methods:
@@ -26,8 +26,8 @@ class KNNRegressionClassifier:
         Initializes the KNNRegressionClassifier.
 
         Args:
-            X (np.ndarray): Training feature matrix of shape (n_samples, n_features).
-            y (np.ndarray): Target vector of shape (n_samples,).
+            X: Training feature matrix
+            y: Target vector of
             k (int): Number of nearest neighbors to consider for predictions. Default is 3.
         """
         self.X = np.array(X)
@@ -47,7 +47,7 @@ class KNNRegressionClassifier:
         Predicts target values for the given input data.
 
         Args:
-            X (np.ndarray): Input feature matrix of shape (n_samples, n_features).
+            X: Input feature matrix
 
         Returns:
             np.ndarray: Predicted target values of shape (n_samples,).

@@ -11,11 +11,11 @@ class LinearRegressionClassifier:
     gradient descent optimization, and model evaluation using R^2 score.
 
     Attributes:
-        X (np.ndarray): Training feature matrix.
-        y (np.ndarray): Training target values.
+        X: Training feature matrix.
+        y: Training target values.
         learningRate (float): Learning rate for gradient descent.
         maxIter (int): Maximum number of iterations for gradient descent.
-        coef (np.ndarray): Coefficients (weights) of the regression model.
+        coef: Coefficients (weights) of the regression model.
     """
 
     def __init__(self, X: np.ndarray, y: np.ndarray, learningRate: float = 0.001, maxIter: int = 3000):
@@ -23,8 +23,8 @@ class LinearRegressionClassifier:
         Initializes the Linear Regression Classifier.
 
         Args:
-            X (np.ndarray): Training feature matrix of shape (n_samples, n_features).
-            y (np.ndarray): Target vector of shape (n_samples,).
+            X: Training feature matrix.
+            y: Target vector.
             learningRate (float): Learning rate for gradient descent. Default is 0.0001.
             maxIter (int): Maximum number of iterations for gradient descent. Default is 1000.
         """
@@ -61,7 +61,7 @@ class LinearRegressionClassifier:
         Predicts target values for the given input data.
 
         Args:
-            X (np.ndarray): Input feature matrix of shape (n_samples, n_features).
+            X: Input feature matrix.
 
         Returns:
             np.ndarray: Predicted target values of shape (n_samples,).
@@ -104,8 +104,8 @@ class LinearRegressionClassifier:
         Evaluates the model's performance using the R^2 score.
 
         Args:
-            X (np.ndarray): Test feature matrix of shape (n_samples, n_features).
-            y (np.ndarray): True target values of shape (n_samples,).
+            X: Test feature matrix of shape.
+            y: True target values.
 
         Returns:
             float: R^2 score.

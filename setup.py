@@ -2,11 +2,12 @@ from setuptools import setup, find_packages
 
 setup(
     name='RedML',
-    version='1.0.3',
+    version='1.1.0',
     packages=find_packages(),
     install_requires=[
         'numpy',
         'matplotlib',
+        'scipy',
     ],
     author='Arnav Bajaj',
     author_email='arnavbajaj9@gmail.com',

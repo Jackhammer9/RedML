@@ -145,6 +145,34 @@ print("R² Score:", r2_score)
 ```
 ---
 
+### **4. Support Vector Regression**
+
+#### **Example Usage**
+```python
+from RedML import EpsilonSVRClassifier
+
+    # Training data
+    X = np.array([[1], [2], [3], [4], [5], [6], [7], [8], [9], [10]])
+    y = np.array([2.3, 3.1, 4.8, 8.5, 10.1, 11.8, 13.2, 14.4, 16, 17.6])
+
+    # Initialize and train the SVR model
+    svr = EpsilonSVRClassifier(X, y, epsilon=0.1, C=10, kernel="rbf", gamma=0.5)
+    svr.fit()
+
+    # Predict and evaluate
+    X_test = np.array([[6]])
+    predictions = svr.predict(X_test)
+    print("Predictions on X_test:", predictions)
+
+    # Visualize the results
+    svr.visualize()
+
+    # R^2 score
+    r2_score = svr.score(X, y)
+    print("R^2 Score:", r2_score)
+```
+---
+
 ## **Contributing**
 
 Contributions are welcome! If you'd like to improve RedML, please fork the repository and submit a pull request.
